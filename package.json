@@ -1,0 +1,21 @@
+{
+  "name": "alexa-skill-playground",
+  "version": "1.0.0",
+  "description": "Just another playground project to make alexa talk",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts"
+  },
+  "author": "xxrulixx@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-verifier": "^0.3.6",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0",
+    "ts-node": "^3.2.1",
+    "typescript": "^2.4.2"
+  }
+}
