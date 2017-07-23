@@ -1,4 +1,4 @@
-import forecastResponse from './forecast-response';
+import { ForecastResponse } from './forecast-response';
 
 export default function intentHandler(intent: any) {
     switch(intent.name) {
@@ -19,5 +19,5 @@ function handleForecastIntent(intent: any) {
     // Do your business logic to get weather data here!
     // Then send a JSON response...
 
-    return forecastResponse;
+    return ForecastResponse;
 }

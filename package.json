@@ -1,11 +1,12 @@
 {
   "name": "alexa-skill-playground",
   "version": "1.0.0",
-  "description": "Just another playground project to make alexa talk",
+  "description": "git ",
   "main": "index.js",
   "scripts": {
     "start": "npm run build:live",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc index.ts --outDir dist && cp package.json dist/",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts"
   },
   "author": "xxrulixx@gmail.com",
