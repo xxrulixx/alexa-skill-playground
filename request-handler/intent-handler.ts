@@ -3,8 +3,7 @@ import { ForecastResponse } from './forecast-response';
 export default function intentHandler(intent: any) {
     switch(intent.name) {
         case 'Forecast':
-            handleForecastIntent(intent);
-            break;
+            return handleForecastIntent(intent);
     }   
 }
 

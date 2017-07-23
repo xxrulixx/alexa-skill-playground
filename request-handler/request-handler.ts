@@ -2,6 +2,8 @@ import { LaunchResponse } from './launch-response';
 import intentHandler from './intent-handler';
 
 export function requestHandler(req: any) {
+    console.log('request id: ' + req.body.request.requestId);
+    
     switch(req.body.request.type) {
         case 'LaunchRequest':
             return LaunchResponse;
