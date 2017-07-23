@@ -1,9 +1,19 @@
 import { ForecastResponse } from './forecast-response';
+import { GoodByeResponse } from './goodbye-response';
+import { StaffResponse } from './staff-response';
 
 export default function intentHandler(intent: any) {
+    console.log('- handling intent: ' + intent.name);
+
     switch(intent.name) {
         case 'Forecast':
             return handleForecastIntent(intent);
+
+        case 'Staff':
+            return StaffResponse;
+
+        case 'AMAZON.CancelIntent': 
+            return GoodByeResponse;
     }   
 }
 
@@ -20,3 +30,5 @@ function handleForecastIntent(intent: any) {
 
     return ForecastResponse;
 }
+
+//  
